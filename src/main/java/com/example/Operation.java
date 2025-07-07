@@ -17,7 +17,7 @@ public class Operation {
         operations.add((a,b)->a-b);
         operations.add((a,b)->a/b);
         operations.forEach(op->System.out.println(op.apply(2, 2)));
-        var result = sum(5);
+        var result = sum.apply(5);
         System.out.println(result.apply(3)); //8
         result.apply(100); //105
     }
