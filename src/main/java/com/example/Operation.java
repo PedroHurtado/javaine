@@ -22,7 +22,7 @@ public class Operation {
         result.apply(100); //105
     }
     
-    static Function<Integer,Integer> sum(Integer a){
+    /*static Function<Integer,Integer> sum(Integer a){
         return b->a+b;
-    }
+    }*/
 }
