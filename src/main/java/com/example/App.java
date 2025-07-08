@@ -8,6 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Operation.run();
+        //Operation.run();
+        Functional.run();
     }
 }
