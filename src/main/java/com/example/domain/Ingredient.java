@@ -40,5 +40,9 @@ public class Ingredient extends EntityBase {
         return new Ingredient(id, name, cost);
     }
 
+    public static Ingredient copy(Ingredient other){                
+        return new Ingredient(other.getId(), other.getName(), other.getCost());
+    }
+
 }
 
