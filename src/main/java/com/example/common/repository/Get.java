@@ -8,9 +8,7 @@ import com.example.common.NotFondException;
 
 public interface Get<T extends EntityBase, ID> extends Data<T> {
     default T get(ID id) {
-        Stream<T> filter = getData().stream()
-                .filter(e -> e.getId().equals(id));
-        return unwrap(filter.findFirst(),"No se encuentra la entidad");
+        return get(id, "No se encuentra la entidad");        
     }
     default T get(ID id,String message) {
         Stream<T> filter = getData().stream()
